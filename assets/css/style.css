@@ -1,0 +1,28 @@
+.page-section {
+    display: none;
+}
+
+.page-section.active {
+    display: block;
+}
+
+.selector button {
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.selector button.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.page-section {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.page-section.active {
+    display: block;
+    opacity: 1;
+}

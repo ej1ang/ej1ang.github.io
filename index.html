@@ -1,50 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<div class="topnav">
-    <a class="active" href="#aboutMe"> About Me </a>
-    <a href="#projects"> Projects</a>
-    <a href="#currentProjects"> Blog</a>
-    <a href="#contactMe"> Contact Me</a>
-</div>
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Eric Jiang</title>
-
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
-    <header>
-        <h1>EJ Lang</h1>
 
-        <nav class="selector">
-            <button data-section="about">About</button>
-            <button data-section="projects">Projects</button>
-            <button data-section="current">Current Work</button>
-        </nav>
+    <!-- Top navigation -->
+    <header class="topnav">
+        <h1 class="logo">
+            Eric <span class="highlight">Jiang</span>
+        </h1>
+
+        <div class="button-group">
+            <button class="button" type="button">Contact Me</button>
+        </div>
     </header>
 
-    <main>
-        <section id="about" class="page-section active">
-            <h2>About Me</h2>
-            <p>Short bio, skills, links.</p>
-        </section>
+    <!-- header section -->
+    <div class="hero-header">
+        <!-- Content before waves -->
+        <div class="inner-header flex">
+            <div class="hero-content">
+                <h1 class="hero-title"><b>EJ</b></h1>
+                <nav class="selector">
+                    <button data-section="about">About</button>
+                    <button data-section="projects">Projects</button>
+                    <button data-section="blog">Blog</button>
+                </nav>
+            </div>
+        </div>
 
-        <section id="projects" class="page-section">
-            <h2>Projects</h2>
-            <p>Finished projects.</p>
-        </section>
+        <!-- Main content sections -->
+        <main class="content-sections">
+            <section id="about" class="page-section active">
+                <h2>About Me</h2>
+                <img class="about-photo" src="assets/images/EJ_pfp.jpg" width="200" height="200" />
+                <p align="justify">
+                    Hello, I’m Eric Jiang, I am currently pursuing my bachelors in computer science with a minor in
+                    statistics at the University of Alberta.
+                    In my time as a student at the University, I have built games engines in both object oreintated and
+                    entity component system methodologies. I have built a website, not including this one. in addition I
+                    plan on releasing a minecraft mod of my own in the future.
+                </p>
+                <br>
+                <p align="justify">
+                    I have a strong interest in statistics and have completed coursework covering probability theory,
+                    statistical inference, and applied data analysis, with an emphasis on interpreting data and drawing
+                    meaningful conclusions.
+                </p>
+                <br>
+                <p align="justify">
 
-        <section id="current" class="page-section">
-            <h2>Current Projects</h2>
-            <p>What you're working on now.</p>
-        </section>
-    </main>
+                </p>
+            </section>
+
+            <section id="projects" class="page-section">
+                <h2>Projects</h2>
+                <p>This is Leo the Wizard Cat. This is a game built from the ground up using the principles of an ECS
+                    game engines. It is a 2D platformer that involves the use of different spells to accomplish
+                    different things.
+                    Each element has a unique feature to it alongside with its own interactions based on the element of
+                    the enemies. The game features parallax scrolling, a lookahead camera system, animations, and sound
+                    affects. The game is coded in c++.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Xq-uvXBOO7E?si=AzT2RPgvKNHJksey"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div style="height: 50px;"></div>
+                <p> This BOLO. It is an old game created back in the 1980s recreated by us using modern c++. The game
+                    was built using the principles of OOP game engines. The game features a radar system for the bases,
+                    a map showing where the player is, different enemy difficulties and level densities.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hhMU4CA8O9o?si=AVxkrPzrk2nFrHvd"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div style="height: 50px;"></div>
+                <p> This is team Project Black's version of a website called Social distribution. It features a backend
+                    utilizing Django. The frontend is made using a mix of React, TypeScript, Tailwind CSS, and Framer
+                    Motion. The website is able to interact with other teams who made this project. Posts and friends
+                    are shared across different teams. The video below was used as a promotional video for the website
+                    our team made.
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZXBx65lyPxw?si=urGNfZjONigpIxO_"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <section id="blog" class="page-section">
+                <h2>Current Projects</h2>
+                <p>Currently I am in the process of making a minecraft mod for supply drops. The models and the code is
+                    being made by me currently.</p>
+            </section>
+        </main>
+
+        <!-- Waves Container -->
+        <div class="waves-container">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(0,0,0,0.8)" />
+                </g>
+            </svg>
+        </div>
+    </div>
 
     <script src="assets/js/main.js" defer></script>
+
+
 </body>
 
 </html>

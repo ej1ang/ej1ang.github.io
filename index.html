@@ -17,7 +17,7 @@
         </h1>
 
         <div class="button-group">
-            <button class="button" type="button">Contact Me</button>
+            <a href="#contact" class="button">Contact Me</a>
         </div>
     </header>
 
@@ -98,6 +98,17 @@
                     being made by me currently.</p>
             </section>
         </main>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <form class="contact-form" action="https://formspree.io/f/mwvpawap" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
 
         <!-- Waves Container -->
         <div class="waves-container">
